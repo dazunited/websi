@@ -1,0 +1,161 @@
+
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    background-color: rgba(185, 171, 171, 0.486);
+    padding-top: 10px;
+   
+    height: 140px;
+}
+
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.navigation ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 13px;
+    list-style: none;
+    
+}
+
+
+.navigation ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.navigation ul li a:hover{
+     color: indigo;
+}
+
+.navigation ul li:hover{
+    color: indigo;
+    border-bottom: 5px solid indigo;
+    height: 130px;
+}
+
+.logo img{
+    height: 120px;
+}
+
+.logo:hover {
+    border-bottom: 5px solid indigo;
+   
+}
+
+
+
+#content{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: auto;
+    
+}
+
+
+.title{
+    height: 100%;
+    background-repeat: no-repeat, repeat;
+    background-image: url("/images/giphy.gif");
+    background-position: center;
+    background-size: 60%;
+    filter: grayscale(60%);
+    font-weight: bolder;
+}
+
+#content .title h1{
+    padding-top: 150px;
+    padding-bottom: 20px;
+    color: white;    
+    font-size: 3rem;
+}
+#content .title p{
+    padding-bottom: 100px;
+    color: white;
+}
+
+.coden{
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat, repeat;
+    background-image: url("/images/codenation.png");
+    background-position: center;
+    background-size: 50%;
+    filter: grayscale(30%);
+    font-weight: bolder;
+}
+
+.about{
+    background-color: wheat;
+    margin-left: 200px;
+    margin-right: 200px;
+  
+}
+
+.about h1{
+    font-weight: bolder;
+}
+
+.about h2{
+    text-align: left;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.about p{
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.cards {
+    margin-top: 100px;
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-bottom: 5em;
+    font-size: 0.8em;
+  }
+
+  .cards img{
+    height: 200px;
+  }
+  
+  .card .icon{
+    height: 60px;   
+  }
+
+  .activity-1-enbed{
+    width: 800px;
+    margin-left: 300px;
+  }
+  @media (min-width: 600px) {
+    .cards { grid-template-columns: repeat(2, 1fr); }
+    
+  }
+
+  @media (min-width: 900px) {
+    .cards { grid-template-columns: repeat(3, 1fr); }
+  }
